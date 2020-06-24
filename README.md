@@ -6,15 +6,22 @@ En este ejercicio, se nos pide modelar empresas que ofrecen los servicios de pro
 ## Etapa 1 - profesionales y empresas
 
 De cada **profesional** se debe poder obtener:
-- en qué _universidad_ estudiaron, esto se debe asignar para cada profesional.
-- sus _honorarios por hora_ de trabajo, cómo se determina depende del tipo de profesional.
-- en qué _provincias_ puede trabajar, cómo se determina depende del tipo de profesional.
+- en qué _universidad_ estudiaron, esto se debe asignar para cada 
+profesional.
+- sus _honorarios por hora_ de trabajo, cómo se determina depende 
+del tipo de profesional.
+- en qué _provincias_ puede trabajar, 
+cómo se determina depende del tipo de profesional.
 
 De cada **universidad** nos va a interesar: en qué provincia está, y qué honorarios por hora de trabajo recomienda para los profesionales.
 
-Deben contemplarse distintos tipos de profesionales, de acuerdo a lo que se indica a continuación.
+Deben contemplarse distintos tipos de profesionales, 
+de acuerdo a lo que se indica a continuación.
 - **Profesionales vinculados a una universidad**:  
-  pueden trabajar solamente en la provincia donde está la universidad, los honorarios son los que recomienda la universidad.   **OJO** que la Universidad está en _una_ provincia, pero el profesional tiene que devolver una _colección_ de provincias. Un profesional vinculado devolverá una colección con un solo elemento.
+  pueden trabajar solamente en la provincia donde está la universidad,
+   los honorarios son los que recomienda la universidad.  
+    **OJO** que la Universidad está en _una_ provincia, 
+    pero el profesional tiene que devolver una _colección_ de provincias. Un profesional vinculado devolverá una colección con un solo elemento.
 - **Profesionales asociados del Litoral**:
   pueden trabajar en Entre Ríos, Santa Fe y Corrientes, cobran 3000 pesos por hora de trabajo.
 - **Profesionales libres**:
@@ -58,7 +65,9 @@ Además, un profesional libre le puede _pasar_ una cantidad X de dinero a otro p
 
 ## Etapa 4 - registro de trabajos hechos
 
-Agregar al modelo el registro de cada trabajo que una empresa de servicios hace para un determinado solicitante.
+Agregar al modelo el registro de cada trabajo 
+que una empresa de servicios hace para un determinado solicitante.
+
 Para esto es necesario que las empresas puedan _brindar servicio_ a un solicitante. Se asume que cada servicio insume una hora de tiempo de un profesional.
 Debe pasar lo siguiente:
 - si el solicitante puede ser atendido (etapa 3), entonces elegir uno cualquiera de los profesionales que puede atenderlo, hacer que ese profesional cobre (etapa 2) su honorario por hora (etapa 1), y agregar al solicitante al conjunto de _clientes_ de la empresa.
@@ -69,8 +78,10 @@ Agregar la posibilidad de preguntarle a una empresa de servicios: cuántos clien
 
 
 ## Etapa 5 - profesional poco atractivo
-Saber para una empresa, si dado un profesional, es _poco atractivo_ para la empresa.  
-La condición es: si para cada provincia en la que puede trabajar el profesional, la empresa cuenta con otro que también puede cubrir esa provincia, y que cobra más barato. 
+Saber para una empresa, si dado un profesional, es _poco atractivo_ 
+para la empresa.  
+La condición es: si para cada provincia en la que puede trabajar el 
+profesional, la empresa cuenta con otro que también puede cubrir esa provincia, y que cobra más barato. 
 
 
 
